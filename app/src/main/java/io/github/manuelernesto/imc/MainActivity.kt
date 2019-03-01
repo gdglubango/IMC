@@ -3,10 +3,16 @@ package io.github.manuelernesto.imc
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
+    val resultado_tv: TextView = findViewById(R.id.resultado_tv)
+    val peso_et: EditText = findViewById(R.id.peso_et)
+    val altura_et: EditText = findViewById(R.id.altura_et)
+    val nome_et: EditText = findViewById(R.id.nome_et)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
